@@ -19,7 +19,6 @@ export class AppComponent {
       $event.upVotes=0;
       $event.downVotes=0;
       this.quotes.unshift($event);
-  
     }  
  constructor(){}
     }
