@@ -1,8 +1,8 @@
-<div>
-  <h1><span>My</span> Quotes</h1>
-  <ul>
-    <li *ngFor='let quote of quotes'>
-      {{quote}}
-    </li>
-  </ul>
+<div class="row">
+    <div class="col-md-6">
+      <app-quote-form (inputQuote)="pushQuote($event)"></app-quote-form>
+    </div>
+    <div class="col-md-6">
+    <app-quote [quotes]='quotes'></app-quote>
+    </div>
 </div>
