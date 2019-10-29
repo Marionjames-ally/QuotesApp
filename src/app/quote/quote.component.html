@@ -1,18 +1,25 @@
 <!-- <div class="container"> -->
 
 
-<ul>
+
   <div *ngFor='let quote of quotes; let i = index'>
+      <p *ngIf='quote.votes==highest; else notHigh' appHighlight>
+          {{quote.name}} ... {{quote.votes}}</p>
+  
+      <ng-template #notHigh>
+          {{quote.name}} ... {{quote.votes}}
+      </ng-template>
+      <ul>
+          <li>vote:{{quote.votes}}</li>
+      
     <li id="{{i}}" >{{quote.quote}}</li>
     <p style="text-decoration: underline;">{{quote.name}} posted on:  {{quote.postDate|date|uppercase}} </p>
     <button (click)='toggleDetails(i)' class="btn btn-outline-primary btn-sm">More</button>
     <!--  -->~    
    <app-quote-details style="background-color: rgba(121, 224, 224, 0.089)" *ngIf="quote.showDetails" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
    
-  </div>
-</ul>
-
-<div>
+  
+    </ul>
 
 </div>
 <!-- </div> -->
