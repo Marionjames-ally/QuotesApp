@@ -1,0 +1,15 @@
+<div class="container">
+<h1>My Quotes</h1>
+
+<ul>
+  <div *ngFor='let quote of quotes; let i = index'>
+    <li id="{{i}}" >{{quote.quote}}</li>
+    <p style="text-decoration: underline;">due on  {{quote.postDate|date|uppercase}} </p>
+    <button (click)='toggleDetails(i)' class="btn btn-outline-primary btn-sm">More</button>
+    <!--  -->
+    
+   <app-quote-details style="background-color: rgba(121, 224, 224, 0.089)" *ngIf="quote.showDetails" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+   
+  </div>
+</ul>
+</div>

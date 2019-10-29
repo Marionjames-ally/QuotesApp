@@ -1,24 +1,27 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { FormsModule } from "@angular/forms";
-
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-import { QuoteComponent } from "./quote/quote.component";
-import { QuoteDetailsComponent } from "./quote-details/quote-details.component";
-import { QuoteFormComponent } from "./quote-form/quote-form.component";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { AppComponent } from './app.component';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { QuoteComponent } from './quote/quote.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { DateCountPipe } from './date-count.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    QuoteFormComponent,
     QuoteComponent,
     QuoteDetailsComponent,
-    QuoteFormComponent,
-    DateCountPipe
+    DateCountPipe,
+  
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [
+    BrowserModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
