@@ -1,5 +1,6 @@
 export class Quote {
    showDetails: boolean;
+  static toBeTruthy: any;
     constructor(
     public id:number,
     public quote:string,

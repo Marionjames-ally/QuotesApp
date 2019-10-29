@@ -1,6 +1,8 @@
 # Quotes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14.
+This project allows the user to be able to add a quote in the list,delete a quote, upvote or downvote a quote
+The user should be able to toggle to see more about the quote
 
 ## Development server
 
@@ -25,4 +27,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-# Quotesapp
