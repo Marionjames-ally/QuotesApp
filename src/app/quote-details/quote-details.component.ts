@@ -10,8 +10,13 @@ import { Quote } from '../quote';
 
 
 export class QuoteDetailsComponent implements OnInit {
+  showDetails: any;
+onSubmit(){
+ 
+}
+
     author(){
-        
+      
     }
   
   upVote() {

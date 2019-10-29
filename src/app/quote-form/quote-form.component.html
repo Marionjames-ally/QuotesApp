@@ -7,20 +7,24 @@
     <form (ngSubmit)='submitForm()'>
         <div class="forms">
             <div class="form-group">
-                <label for="quote">NAME</label>
-                <input  type="text" name="user" [(ngModel)]="this.newQuote.quote" class="form-control"  placeholder="Enter Name" required>
+                <label for="name">NAME</label>
+                <input  type="text" name="name" [(ngModel)]="this.newName.quote" class="form-control"  placeholder="Enter Name" required>
               </div>
             <div class="form-group">
               <label for="quote">QUOTE</label>
-              <input  type="text" name="user" [(ngModel)]="this.newQuote.quote" class="form-control"  placeholder="Enter Quote" required>
+              <input  type="text" name="quote" [(ngModel)]="this.newQuote.quote" class="form-control"  placeholder="Enter Quote" required>
             </div>
       
             <div class="form-group">
               <label for="exampleInputPassword1">AUTHOR</label>
               <input type="text" class="form-control" name="author" id="author" placeholder="Author" required>
             </div>
+            <div class="form-group">
+              <label for="Date">Date</label>
+              <input type="Date" class="form-control" name="Date" id="Date" placeholder="Input date">
+            </div>
           </div>
-          <button class="btn btn-outline-primary" id="submit" type="submit" name="button">  <i class="fa fa-telegram"></i> Add Quote</button>
+          <button class="btn btn-outline-primary" id="submit" type="submit" name="button" (click)='onSubmit' >  <i class="fa fa-telegram"></i> Add Quote</button>
 
         </form>
     

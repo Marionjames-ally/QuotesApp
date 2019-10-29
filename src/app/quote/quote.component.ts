@@ -10,15 +10,12 @@ import { Quote } from './../quote';
 
 
 export class QuoteComponent implements OnInit {
-  highest:number = 3;
   @Input() quotes= Array<Quote>()
     constructor() { }
 
   ngOnInit() {
   }
-highestVoted(){
-  
-}
+
 
   completeQuote(isComplete: any,index: number){
     if (isComplete){
