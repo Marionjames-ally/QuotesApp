@@ -20,7 +20,7 @@ export class QuoteComponent implements OnInit {
         this.quotes.splice(index,1);
         }
         }
-  toogleDetails(index: string | number) {
-    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  toggleDetails(index) {
+    this.quotes[index].showDetails = !this.quotes[index].showDetails;
 }
 }
