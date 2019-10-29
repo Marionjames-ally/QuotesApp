@@ -4,7 +4,7 @@
 <ul>
   <div *ngFor='let quote of quotes; let i = index'>
     <li id="{{i}}" >{{quote.quote}}</li>
-    <p style="text-decoration: underline;">due on  {{quote.postDate|date|uppercase}} </p>
+    <p style="text-decoration: underline;">{{quote.name}} posted on:  {{quote.postDate|date|uppercase}} </p>
     <button (click)='toggleDetails(i)' class="btn btn-outline-primary btn-sm">More</button>
     <!--  -->
     

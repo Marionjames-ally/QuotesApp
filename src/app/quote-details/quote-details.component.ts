@@ -10,6 +10,9 @@ import { Quote } from '../quote';
 
 
 export class QuoteDetailsComponent implements OnInit {
+    author(){
+        
+    }
   
   upVote() {
     this.quote.upVote ++
