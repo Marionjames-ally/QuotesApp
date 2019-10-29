@@ -11,7 +11,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## User Interface
 
 The user's first view :
-![Quotesapp](my quotes.png)
+/home/moringa/Pictures/my quotes.png
 
 ## Code scaffolding
 
