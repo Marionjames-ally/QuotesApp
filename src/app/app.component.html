@@ -1,17 +1,22 @@
-<div style="text-align:center">
-    <hr>
-  </div>
-  <!-- <div class="container-fluid"> -->
-  <div class="row">
-    <div col-md-6>
-      <app-quote-form (inputQuote)="pushQuote($event)"></app-quote-form>
+    <div style="text-align:center">
+        <h1>My Quotes</h1>
+        <hr>
     </div>
-    <div class="col-md-6">
+  <!-- <div class="container-fluid"> -->
+<div class="container-fluid">
+  <div class="row">   
+    <div class="col-md-4">
       
         <app-quote [quotes]='quotes'></app-quote>
       
     </div>
+
+    <div class="col-md-8">
+        <app-quote-form (inputQuote)="pushQuote($event)"></app-quote-form>
+    </div>
+
   </div>
+</div>
    
     
   <!-- </div> -->
