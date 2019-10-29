@@ -1,11 +1,23 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
+@import url("https://fonts.googleapis.com/css?family=Kalam&display=swap");
 
 
 body{
-    background-image: url('https://images.unsplash.com/photo-1487147264018-f937fba0c817?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80')
+    background-image: url('https://i.pinimg.com/originals/fa/72/7a/fa727ae20b91dd1ec947822c0d0cc5e2.jpg');
+    background-size: cover;
 /* background-color: red;    background-image:url('file:///home/moringa/Downloads/bg1.jpg'); */
 }
 *{
     overflow-x: hidden;
+    font-weight:bold;
+}
+
+.card{
+    background:transparent;
+}
+.qts{
+    /* font-family: 'Kalam', cursive; */
+    font-size: 20px;
+    /* overflow: ; */
 }
