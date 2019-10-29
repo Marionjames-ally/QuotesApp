@@ -17,6 +17,15 @@ The user's first view :
 
 Marion James
 
+## Technologies Used
+
+Javascript
+Angular 8
+CSS 3
+HTML 5
+Bootstrap
+Jquery
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
